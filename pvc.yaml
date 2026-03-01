@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: gatus-nfs-pvc
+  namespace: gatus
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: ""   # 🔥 IMPORTANT (must be empty)
+  resources:
+    requests:
+      storage: 1Gi

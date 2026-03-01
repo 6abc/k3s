@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: gatus
+  namespace: gatus
+spec:
+  rules:
+    - host: gatus.lab
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: gatus
+                port:
+                  number: 80
+
+    - host: gt.loklab.dpdns.org
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: gatus
+                port:
+                  number: 80
