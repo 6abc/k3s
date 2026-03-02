@@ -103,6 +103,7 @@ helm upgrade kind-prometheus prometheus-community/kube-prometheus-stack \
 ```
 
 🏗 Final Architecture
+```sh
 Browser → grafana.lab
         ↓
    Traefik Ingress (k3s built-in)
@@ -112,3 +113,4 @@ Browser → grafana.lab
 Prometheus / Loki (ClusterIP)
         ↓
 NFS Storage (192.168.0.11)
+```
