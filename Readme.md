@@ -1,6 +1,6 @@
 # Dynamic NFS Provisioning with `nfs-subdir-external-provisioner`
 
-Perfect 👍 — since you already have an NFS server (`192.168.0.11`), this guide shows  
+Since we already have an NFS server (`192.168.0.11`), this guide shows  
 a real‑world, easy, production‑style way to set up **dynamic provisioning**.
 
 We'll use:
@@ -333,13 +333,3 @@ Just do:
 * `no_root_squash`
 
 That solves 95% of issues.
-
-🚨 If You Want More Secure Setup
-
-Tell me:
-
-* Is this internal-only network?
-* Is it production with security requirements?
-* Are pods running as non-root?
-
-Then I’ll give you a secure-but-working configuration.
